@@ -34,4 +34,4 @@ INSTANCE_NAMES=()
 
 INSTANCE_TYPE="t3.large"
 
-for x in {1..$INSTANCE_COUNT}; do $INSTANCE_NAMES+=($INSTANCE_NAME+$(uuidgen)); done
+for _ in {1..$INSTANCE_COUNT}; do INSTANCE_NAMES=($INSTANCE_NAME$(uuidgen)); done
